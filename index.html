@@ -120,68 +120,113 @@
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero-bg relative min-h-screen flex items-center overflow-hidden">
+<!-- HERO VIDEO -->
+<section class="relative min-h-screen overflow-hidden flex items-center">
 
-  <div class="line left-[15%]"></div>
-  <div class="line left-[35%]"></div>
-  <div class="line left-[55%]"></div>
-  <div class="line left-[75%]"></div>
+  <!-- VIDEO BACKGROUND -->
+  <video
+    autoplay
+    muted
+    loop
+    playsinline
+    class="absolute inset-0 w-full h-full object-cover"
+  >
+    <source
+      src="https://cdn.pixabay.com/video/2025/02/27/261136_large.mp4"
+      type="video/mp4"
+    />
+  </video>
 
-  <div class="max-w-7xl mx-auto px-6 relative z-10">
+  <!-- OVERLAY -->
+  <div class="absolute inset-0 bg-black/70"></div>
 
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
+  <!-- GLOW EFFECT -->
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-transparent to-cyan-500/10"></div>
 
-      <div>
+  <!-- CONTENT -->
+  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
 
-        <div class="mb-6 inline-flex items-center px-4 py-2 rounded-full glass text-sm text-blue-300">
-          Tecnología inteligente para propiedad horizontal
+    <div class="max-w-4xl">
+
+      <div class="inline-flex items-center px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-xl mb-8">
+        <span class="text-blue-300 text-sm tracking-widest uppercase">
+          Tecnología Inteligente para Propiedad Horizontal
+        </span>
+      </div>
+
+      <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-8">
+
+        Automatización y
+        <span class="text-blue-400">
+          seguridad inteligente
+        </span>
+
+        para edificios modernos.
+
+      </h1>
+
+      <p class="text-xl text-gray-300 leading-relaxed max-w-3xl mb-10">
+        Integramos videovigilancia, control de acceso, domótica y monitoreo inteligente en una sola plataforma tecnológica de alto rendimiento.
+      </p>
+
+      <div class="flex flex-wrap gap-5">
+
+        <a href="#contacto"
+          class="px-8 py-4 bg-blue-600 hover:bg-blue-700 rounded-2xl font-semibold transition shadow-2xl shadow-blue-500/30">
+
+          Solicitar asesoría
+
+        </a>
+
+        <a href="#soluciones"
+          class="px-8 py-4 border border-white/10 backdrop-blur-xl bg-white/5 hover:bg-white/10 rounded-2xl transition">
+
+          Explorar soluciones
+
+        </a>
+
+      </div>
+
+      <!-- STATS -->
+      <div class="flex flex-wrap gap-12 mt-16">
+
+        <div>
+          <h3 class="text-5xl font-black text-blue-400">
+            +150
+          </h3>
+
+          <p class="text-gray-400 mt-2">
+            Proyectos ejecutados
+          </p>
         </div>
 
-        <h1 class="text-5xl lg:text-7xl font-black leading-tight mb-8">
-          Automatización y
-          <span class="gradient-text">
-            seguridad inteligente
-          </span>
-          para edificios modernos.
-        </h1>
+        <div>
+          <h3 class="text-5xl font-black text-blue-400">
+            24/7
+          </h3>
 
-        <p class="text-xl text-gray-300 leading-relaxed mb-10 max-w-2xl">
-          Integramos control de acceso, CCTV, domótica, videovigilancia y automatización en una plataforma tecnológica moderna y escalable.
-        </p>
-
-        <div class="flex flex-wrap gap-4">
-
-          <a href="#contacto" class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-700 transition font-semibold glow">
-            Solicitar cotización
-          </a>
-
-          <a href="#soluciones" class="px-8 py-4 rounded-xl border border-white/10 glass hover:border-blue-500 transition">
-            Ver soluciones
-          </a>
-
+          <p class="text-gray-400 mt-2">
+            Monitoreo inteligente
+          </p>
         </div>
 
-        <div class="mt-14 flex flex-wrap gap-10">
+        <div>
+          <h3 class="text-5xl font-black text-blue-400">
+            99.9%
+          </h3>
 
-          <div>
-            <h3 class="text-4xl font-black text-blue-400">+150</h3>
-            <p class="text-gray-400 mt-1">Proyectos ejecutados</p>
-          </div>
-
-          <div>
-            <h3 class="text-4xl font-black text-blue-400">24/7</h3>
-            <p class="text-gray-400 mt-1">Monitoreo inteligente</p>
-          </div>
-
-          <div>
-            <h3 class="text-4xl font-black text-blue-400">99.9%</h3>
-            <p class="text-gray-400 mt-1">Disponibilidad</p>
-          </div>
-
+          <p class="text-gray-400 mt-2">
+            Disponibilidad operativa
+          </p>
         </div>
 
       </div>
+
+    </div>
+
+  </div>
+
+</section>
 
       <!-- DASHBOARD HERO -->
       <div class="relative floating">
