@@ -151,86 +151,98 @@ class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
 
 </header>
 
-<!-- HERO VIDEO -->
-<section class="relative min-h-screen flex items-center overflow-hidden">
+<!-- HERO -->
+<section class="relative h-screen overflow-hidden flex items-center justify-center">
 
-  <!-- VIDEO BACKGROUND -->
+  <!-- VIDEO -->
   <video
     autoplay
     muted
     loop
     playsinline
-    class="hero-video absolute inset-0 w-full h-full object-cover"
+    preload="auto"
+    class="absolute inset-0 w-full h-full object-cover"
+    style="filter: brightness(.35) saturate(1.2);"
   >
 
     <source
-      src="https://cdn.pixabay.com/video/2024/05/02/210925_large.mp4"
+      src="https://cdn.pixabay.com/video/2023/09/26/182241-868504120_large.mp4"
       type="video/mp4"
-    />
+    >
 
   </video>
 
-  <!-- DARK OVERLAY -->
+  <!-- OVERLAY -->
   <div class="absolute inset-0 bg-black/70"></div>
 
-  <!-- BLUE GLOW -->
-  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-transparent to-cyan-500/10"></div>
+  <!-- GLOW -->
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-900/40 via-black/20 to-cyan-500/10"></div>
 
   <!-- GRID -->
-  <div class="absolute inset-0 grid-lines opacity-20"></div>
+  <div
+    class="absolute inset-0 opacity-20"
+    style="
+      background-image:
+      linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: 60px 60px;
+    "
+  ></div>
 
   <!-- CONTENT -->
-  <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
+  <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
 
-    <div class="grid lg:grid-cols-2 gap-20 items-center">
+    <div class="inline-flex items-center px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-xl mb-8">
 
-      <!-- LEFT -->
-      <div>
+      <span class="text-blue-300 text-sm tracking-widest uppercase">
+        Tecnología inteligente para propiedad horizontal
+      </span>
 
-        <div class="inline-flex items-center px-5 py-2 rounded-full glass mb-8">
+    </div>
 
-          <span class="text-blue-300 text-sm tracking-widest uppercase">
-            Tecnología inteligente para propiedad horizontal
-          </span>
+    <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-8 text-white">
 
-        </div>
+      Automatización y
 
-        <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-8">
+      <span class="text-blue-400">
+        seguridad inteligente
+      </span>
 
-          Automatización y
+      para edificios modernos.
 
-          <span class="gradient-text">
-            seguridad inteligente
-          </span>
+    </h1>
 
-          para edificios modernos.
+    <p class="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-10">
 
-        </h1>
+      Integramos videovigilancia, control de acceso, domótica y monitoreo inteligente en una sola plataforma tecnológica premium.
 
-        <p class="text-xl text-gray-300 leading-relaxed max-w-3xl mb-10">
+    </p>
 
-          Integramos videovigilancia, control de acceso, domótica y monitoreo inteligente en una sola plataforma tecnológica.
+    <div class="flex flex-wrap justify-center gap-5">
 
-        </p>
+      <a
+        href="#contacto"
+        class="px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 transition shadow-2xl shadow-blue-500/30 font-semibold"
+      >
 
-        <div class="flex flex-wrap gap-5">
+        Solicitar asesoría
 
-          <a href="#contacto"
-          class="px-8 py-4 rounded-2xl bg-blue-600 hover:bg-blue-700 transition font-semibold glow">
+      </a>
 
-            Solicitar cotización
+      <a
+        href="#soluciones"
+        class="px-8 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition"
+      >
 
-          </a>
+        Explorar soluciones
 
-          <a href="#soluciones"
-          class="px-8 py-4 rounded-2xl glass hover:border-blue-500 transition">
+      </a>
 
-            Ver soluciones
+    </div>
 
-          </a>
+  </div>
 
-        </div>
-
+</section>
         <!-- STATS -->
         <div class="flex flex-wrap gap-12 mt-16">
 
